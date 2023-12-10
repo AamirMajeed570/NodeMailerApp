@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Node Mailer App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">NodeMailer App</h1>
+            <p class="desc">Send Emails Easily using NodeMailer App</p>
+            <form action="/send-email" method="POST" class="email-form" id="email-form">
+                <input type="email" name="email" id="email" placeholder="Enter recipient email" required>
+                <textarea name="desc" id="desc" cols="30" rows="10">
+
+                </textarea>
+                <button type="submit" id="submit-btn">Send Email</button>
+            </form>
+            
+                <% if(typeof status !== 'undefined' && status && typeof message !=='undefined' && message){%>
+                    <div class="status-message"> <%status %> <%status %> </div>
+               <% }%>
+                <p class="copyright">&copy; 2023 Aamir Majeed Khan</p>
+            
+        </div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
