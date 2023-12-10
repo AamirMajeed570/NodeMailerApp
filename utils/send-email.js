@@ -6,7 +6,7 @@ const sendEmail = async(to,messageContent)=>{
             port:587,
             secure:false,
             auth:{
-                user:'aamirmajeedkhan570@gmail.com',
+                user:'yourgmailaccountname',
                 pass:'tntm kgwi izky bbrx'
             }
             
